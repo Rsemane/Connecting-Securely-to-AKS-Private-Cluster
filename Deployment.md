@@ -90,9 +90,12 @@ To configure Azure Cloud Shell with Virtual Network integration, the following c
 - **Azure Relay Namespace**: Facilitates secure communication between the Cloud Shell container and Customer Browser.
 - **File Share (Storage Account)**: Used to persist Cloud Shell session data across restarts. 
 
+
+![Required config resources](images/Configure-CloudShell-Private-6.png)
+
 **PS: The above resources are automatically deployed via the ARM Template Azure Cloud Shell,except the File Share that should be deployed manually.**
 👉 **Important:
-Please make sure to check the section "Deploy Azure Relay" for additional deployment steps and configuration details.**
+Please make sure to check the section "Deploy Azure Relay Namespace" for additional deployment steps and configuration details.**
 
 ### <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
 **1. Go to Azure Portal** 
