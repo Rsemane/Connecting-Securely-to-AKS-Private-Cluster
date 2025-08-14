@@ -63,19 +63,23 @@ The following resources are provisioned as part of the AKS cluster deployment.
 
 
 ## 🔗  Link Hub VNet (VNet where Cloud Shell ACI will be deployed) to Private DNS Zone. 
-1. Locate the AKS Private DNS Zone
-Go to Private DNS Zones in Azure Portal.
-The zone name will look like:
-privatelink.<region>.azmk8s.io
-(e.g., privatelink.northeurope.azmk8s.io)
-2. Link the Hub VNet to the Private DNS Zone
+**1. Locate the AKS Private DNS Zone**
+- Go to Private DNS Zones in Azure Portal.
+- The zone name will look like: privatelink.<region>.azmk8s.io (e.g., privatelink.northeurope.azmk8s.io)
+**2. Link the Hub VNet in my case to the Private DNS Zone**
 - In the Private DNS Zone:
   - Go to Settings → Virtual Network Links
   - Click + Add
-Enter a Link Name (e.g., hub-vnet-link)
-Select the Hub VNet from the dropdown
-Choose whether to enable Auto-registration (usually disabled for AKS)
-Click OK
+    
+![Link Virtual Network to Private DNS Zone](images/Link-hub-vnet-to-private-dns-zone.png)
+
+ 
+- Enter a Link Name (e.g., dnslink-vnet-hub)
+- Select the Hub VNet from the dropdown
+- Choose whether to enable Auto-registration (usually disabled for AKS)
+- Click OK
+
+![Link Virtual Network to Private DNS Zone](images/Private-EndpointAKS-2.png)
 
 ## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
 - Deploy Azure Relay 
