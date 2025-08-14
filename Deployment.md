@@ -31,6 +31,5 @@ For the purpose of this demonstration, access to the AKS private cluster will be
   
 ## ✅ Connection Verification
 Confirm access paths:
-From Portal → Cloud Shell → AKS API
-From Remote Site → VNet Gateway → AKS
-From Jump Box → AKS
+From Portal → Cloud Shell → Private Endpoint AKS
+
