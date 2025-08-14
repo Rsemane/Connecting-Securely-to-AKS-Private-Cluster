@@ -5,7 +5,7 @@ This guide outlines various methods for securely accessing an Azure Kubernetes S
 ### Key Components
 - **AKS Private Cluster**: A Kubernetes cluster with a public FQDN but restricted to private network access.
 - **Cloud Shell VNet Integration**: Enables Cloud Shell to run inside a user-defined VNet for secure resource access.
-- **Azure Container Instance (ACI)**: Hosts the Cloud Shell session when deployed into a VNet.
+- **Azure Container Instance (ACI)**: Hosts the Cloud Shell session when deployed into a VNet, managed by Microsoft.
 
 ## 📘  Scenario: Accessing a Private AKS Cluster via Private Connectivity
 
@@ -24,3 +24,8 @@ You have an AKS private cluster with a public FQDN, but its API server is only a
 5. **Bastion-AKS Direct Integration (Preview)**
    Azure Bastion now supports direct integration with AKS (currently in preview). For a detailed walkthrough, refer to Richard Hooper (@PixelRobots)'s excellent explanation.
 
+## Architecture Diagram
+
+The diagram below presents the various access methods and infrastructure components involved in deploying and connecting to an Azure Kubernetes Service (AKS) private cluster.
+
+<img width="1252" height="516" alt="Connecting to an AKS Private Cluster drawio" src="https://github.com/user-attachments/assets/cd6049df-70e3-4e48-9f9d-b6e1d436e5be" />
