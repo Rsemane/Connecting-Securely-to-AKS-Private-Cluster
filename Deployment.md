@@ -1,6 +1,11 @@
 # 🚀 Deployment Flow Overview
 This guide outlines the steps to deploy and securely connect to an Azure Kubernetes Service (AKS) private cluster using Cloud Shell with VNet integration, following a hub-and-spoke network topology.
-For the purpose of this demonstration, access to the AKS private cluster will be established using Access Option 3, as outlined in the README.md: Cloud Shell in Azure Virtual Network.
+
+ ## Access Options Flow 
+For the purpose of this demonstration, access to the AKS private cluster will be established using Access Option 3.   
+
+![Architecture Diagram](images/Flow%20Connecting%20to%20an%20AKS%20Private%20Cluster.png)
+
 
 ## 🧱 Existing Infrastructure 
 - Using a Free Azure Subscription 
@@ -9,9 +14,6 @@ For the purpose of this demonstration, access to the AKS private cluster will be
     - **Hub VNet*:  Hosts Cloud Shell (VNet-integrated).
     - **Spoke VNet*: Hosts the AKS Private Cluster.
     - **VNet Peering*: Established between Hub and Spoke VNets.
-
- ## Access Options Flow 
-<img width="1183" height="1017" alt="Flow Connecting to an AKS Private Cluster" src="https://github.com/user-attachments/assets/53f022dd-5810-4fe9-ba8f-5913c6720e1e" />
 
 
 ## ☸️ AKS Private Cluster Deployment
