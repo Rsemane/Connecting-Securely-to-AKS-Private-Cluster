@@ -200,9 +200,7 @@ The Azure Relay namespace, along with all required network components and author
 
 ![DeployCloudShell ARM](images/cloudshell-ARM.png)
 
-- Configuration Guidance for Azure Cloud Shell with VNet
-
-   When deploying Azure Cloud Shell ARM ensure that you:
+- When deploying Azure Cloud Shell ARM ensure that you:
 
    - Provide the required information, including the name of the existing VNet you deployed.
    - Use the same resource group for both the Storage Account (created in earlier steps) and the Azure Cloud Shell – VNet deployment.
