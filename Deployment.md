@@ -90,8 +90,10 @@ To configure Azure Cloud Shell with Virtual Network integration, the following c
 - **File Share (Storage Account)**: Used to persist Cloud Shell session data across restarts. 
 
 **PS: The above resources are automatically deployed via the ARM Template Azure Cloud Shell,except the File Share that should be deployed manually.**
+👉 **Important:
+Please make sure to check the section "Deploy Azure Relay" for additional deployment steps and configuration details.**
 
-### <img width="68" height="56" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
+### <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
 **1. Go to Azure Portal** 
 Navigate to https://portal.azure.com and sign in.
 
@@ -114,27 +116,87 @@ Click the + Create button to start the wizard.
 
 ![Create Storage accout](images/Create-Storage-Account-1.png)
 
-#### https://i.imgur.com/FHhdfqG.png Create a File Share Inside the Storage Account
-Navigate to the Storage Account
+####  <img width="50" height="50" alt="image" src="https://i.imgur.com/FHhdfqG.png" /> Create a File Share Inside the Storage Account
+**1. Navigate to the Storage Account**
 Once deployed, go to the newly created storage account.
 
-Select "File shares" from the left menu
+**2. Select "File shares" from the left menu**  
 Under Data storage, click File shares.
 
-Click "+ File share"
-Provide:
+**3. Click "+ File share"**  
 
-Name: e.g., cloudshellfileshare
-Quota: Optional (e.g., 5 GB)
-Click "Create"
+![Create Storage accout](images/Create-Storage-Account-2.png)
+
+Provide:
+- Name: e.g., fs-azurecloudshell
+- Quota: Optional (e.g., 5 GB) (You have to do it via Edit on File Share after creation)
+- Click Create
+
+![Create Storage accout](images/Create-Storage-Account-3.png)
+
+**4. Creation in Progress**
 Your file share will be created and ready for use.
+
+
+### Register resource providers [Check links](Resources.md)
+Cloud Shell needs access to certain Azure resources. You make that access available through resource providers. The following resource providers must be registered in your subscription:
+
+- Microsoft.CloudShell
+- Microsoft.ContainerInstance
+- Microsoft.Relay
+
+Depending on when your tenant was created, some of these providers might already be registered.
+
+To see all resource providers and the registration status for your subscription:
+
+1. Sign in to the Azure portal.
+2. On the Azure portal menu, search for Subscriptions. Select it from the available options.
+3. Select the subscription that you want to view.
+4. On the left menu, under Settings, select Resource providers.
+5. In the search box, enter cloudshell to search for the resource provider.
+6. Select the Microsoft.CloudShell resource provider from the provider list.
+7. Select Register to change the status from unregistered to registered.
+8. Repeat the previous steps for the Microsoft.ContainerInstance and Microsoft.Relay resource providers.
+
+![Register Reource provider](images/resource-provider.png)
+
+
+### Get The Azure container instance ID
+
+The Azure container instance ID is a unique value for every tenant. 
+
+1. Sign in to the Azure portal. From the home page, select **Microsoft Entra ID**. If the icon isn't displayed, enter Microsoft Entra ID in the top search bar.
+
+2. On the left menu, select **Overview**. Then enter **azure container instance service** in the search bar.
+
+3. In the results, under **Enterprise applications**, select **Azure Container Instance Service**.
+   
+![Retrieve ACS ID ](images/retrieve-acs-id.png)
+
+4. On the **Overview** page for **Azure Container Instance Service**, locate the **Object ID** value listed under **Properties**. Click the button **Copy to clipboard**
+
+You use this ID in the quickstart template for the virtual network.
+
+![Copy ID ACS](images/Copy-object-ID-azurecontainerservice.png)
+
+
 
 ## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
 
-- Deploy Azure Relay
-   
-- Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
-- Use Cloud Shell to securely connect to the AKS private endpoint
+### Deploy Azure Relay Namespace
+
+The Azure Relay namespace, along with all required network components and authorization settings, will be deployed automatically using an ARM Template.  
+To deploy these resources into your Azure subscription, please use the link below:  
+
+[🔗 Deploy via Azure Cloud Shell – VNet Quickstart Template](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/cloud-shell-vnet/)
+
+
+
+
+
+
+### Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
+### Use Cloud Shell to securely connect to the AKS private endpoint
 
   
 ## ✅ Connection Verification
