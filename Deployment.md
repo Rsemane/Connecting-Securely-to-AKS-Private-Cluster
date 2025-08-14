@@ -11,9 +11,9 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 - Using a Free Azure Subscription 
 - Owner role already assigned on the subscription. 
 - Hub & spoke Network Topology is already configured:
-    - **Hub VNet*:  Hosts Cloud Shell (VNet-integrated).
-    - **Spoke VNet*: Hosts the AKS Private Cluster.
-    - **VNet Peering*: Established between Hub and Spoke VNets.
+    - *Hub VNet*:  Hosts Cloud Shell (VNet-integrated).
+    - *Spoke VNet*: Hosts the AKS Private Cluster.
+    - *VNet Peering*: Established between Hub and Spoke VNets.
 
 
 ## ☸️ AKS Private Cluster Deployment
