@@ -15,8 +15,7 @@ You have an AKS private cluster with a public FQDN, but its API server is only a
 
 ## ✅ Access Options
 
-**1. Run Command via Azure portal in AKS Resource** 
-
+**1. Run Command via Azure portal in AKS Resource**     
    Access to your kubernetes resources on your AKS resource, click on Run command to interact with AKS cluster.
    
 **2. Azure Bastion via Portal with Jump box**
