@@ -23,7 +23,7 @@ You have an AKS private cluster with a public FQDN, but its API server is only a
    
    Use Azure Bastion to connect to a jump box VM through the Azure Portal, eliminating the need for public IPs.
    
-** 3. Cloud Shell in Azure Virtual Network**
+**3. Cloud Shell in Azure Virtual Network**
    
    Launch Cloud Shell inside the VNet and use kubectl commands to interact with the AKS cluster securely.
    
