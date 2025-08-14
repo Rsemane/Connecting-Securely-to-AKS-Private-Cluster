@@ -23,7 +23,7 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 ## 🔗  Link Hub VNet (VNet where Cloud Shell will be deployed) to Private DNS Zone. 
 - Establish a link between Private DNS Zone and VNet where Cloud Shell is deployed to resolve the public FQDN to Private IP.  
 
-## <img width="77" height="85" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
+## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
 - Deploy Azure Relay 
 - Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
 - Use Cloud Shell to securely connect to the AKS private endpoint
