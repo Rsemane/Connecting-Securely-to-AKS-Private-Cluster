@@ -77,12 +77,62 @@ The following resources are provisioned as part of the AKS cluster deployment.
 - Enter a Link Name (e.g., dnslink-vnet-hub)
 - Select the Hub VNet from the dropdown
 - Choose whether to enable Auto-registration (usually disabled for AKS)
-- Click OK
+- Click Create
 
 ![Link Virtual Network to Private DNS Zone](images/Private-EndpointAKS-2.png)
 
+
+## 🔧 Prerequisites for Cloud Shell VNet Integration
+To configure Azure Cloud Shell with Virtual Network integration, the following components must be provisioned:
+
+- **Network Profile**: Defines the network configuration for the Cloud Shell container, including subnet and IP settings.
+- **Azure Relay Namespace**: Facilitates secure communication between the Cloud Shell container and Customer Browser.
+- **File Share (Storage Account)**: Used to persist Cloud Shell session data across restarts. 
+
+**PS: The above resources are automatically deployed via the ARM Template Azure Cloud Shell,except the File Share that should be deployed manually.**
+
+### <img width="68" height="56" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
+**1. Go to Azure Portal** 
+Navigate to https://portal.azure.com and sign in.
+
+**2. Search for "Storage Accounts"**
+In the top search bar, type Storage Accounts and select it.  
+
+**3. Click "Create"**
+Click the + Create button to start the wizard.  
+
+**4. Fill in the Basics:**
+
+- Subscription: Select your active subscription.
+- Resource Group: A resource group where you will have Storage account and Azure Relay namespace.
+- Storage Account Name: Enter a globally unique name (e.g., hubstorageaccount).
+- Region: Select North Europe.
+- Performance: Standard.
+- Redundancy: Choose Locally-redundant storage (LRS). (Unless you need high availability but for the sake of this demo I used LRS) 
+- Click "Review + Create", then Create
+- Azure will validate the configuration and deploy the storage account.
+
+![Create Storage accout](images/Create-Storage-Account-1.png)
+
+#### https://i.imgur.com/FHhdfqG.png Create a File Share Inside the Storage Account
+Navigate to the Storage Account
+Once deployed, go to the newly created storage account.
+
+Select "File shares" from the left menu
+Under Data storage, click File shares.
+
+Click "+ File share"
+Provide:
+
+Name: e.g., cloudshellfileshare
+Quota: Optional (e.g., 5 GB)
+Click "Create"
+Your file share will be created and ready for use.
+
 ## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
-- Deploy Azure Relay 
+
+- Deploy Azure Relay
+   
 - Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
 - Use Cloud Shell to securely connect to the AKS private endpoint
 
