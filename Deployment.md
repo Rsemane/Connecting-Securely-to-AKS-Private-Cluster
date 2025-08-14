@@ -39,13 +39,13 @@ Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Netw
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%202.png)
 
 
-4. Enable Private Cluster
+4. Enable Private Access
 In the Networking tab:
 
-[x] Check Enable private cluster  
-[x] You can choose to Bring your own Azure Virtual Network if created before. If not you can keep it unchecked, a new Azure Virtual Network will be created.   
-[x]Optionally configure DNS name prefix or leave it to be auto-created.   
-[x]Review + Create   
+- [x] Check Enable private cluster  
+- [x] You can choose to Bring your own Azure Virtual Network if created before. If not you can keep it unchecked, a new Azure Virtual Network will be created.   
+- [x] Optionally configure DNS name prefix or leave it to be auto-created.   
+- [x] Review + Create   
 
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%203.png)
 
