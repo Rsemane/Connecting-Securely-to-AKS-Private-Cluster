@@ -66,9 +66,10 @@ The following resources are provisioned as part of the AKS cluster deployment.
 **1. Locate the AKS Private DNS Zone**
 - Go to Private DNS Zones in Azure Portal.
 - The zone name will look like: privatelink.<region>.azmk8s.io (e.g., privatelink.northeurope.azmk8s.io)
+
 **2. Link the Hub VNet in my case to the Private DNS Zone**
 - In the Private DNS Zone:
-  - Go to Settings → Virtual Network Links
+  - Under DNS Management → Virtual Network Links
   - Click + Add
     
 ![Link Virtual Network to Private DNS Zone](images/Link-hub-vnet-to-private-dns-zone.png)
