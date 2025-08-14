@@ -20,26 +20,26 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 ## ☸️ AKS Private Cluster Deployment
 
 - To deploy the AKS private cluster with a private API server endpoint, follow these steps in the Azure Portal:
-1. Navigate to AKS Service   
-  - Go to the Azure Portal and search for Kubernetes services, then click Create.
+**1. Navigate to AKS Service**    
+   - Go to the Azure Portal and search for Kubernetes services, then click Create.
 
-2. Configure Basics
-Fill in the required fields such as:
-  -  Subscription  
-  -  Resource Group  
-  -  Cluster name   
-  -  Region   
+**2. Configure Basics**
+  - Fill in the required fields such as:
+    -  Subscription  
+    -  Resource Group  
+    -  Cluster name   
+    -  Region   
 
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%201.png)
 
 
-3. Click "Next" Until You Reach the Networking Tab    
+**3. Click "Next" Until You Reach the Networking Tab**   
 Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Networking.   
 
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%202.png)
 
 
-4. Enable Private Access
+**4. Enable Private Access**  
 In the Networking tab:
   - Check Enable private cluster (Note: The option Public access - Set authorized IP ranges will be greyed out) 
   - If you have already created an Azure Virtual Network, you may choose to use it by selecting the **Bring your own VNet** option. Otherwise, leave it unchecked to allow Azure to automatically create a new Virtual Network for the cluster. 
@@ -48,9 +48,9 @@ In the Networking tab:
 
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%203.png)
 
-5. Edit the name of Infrastructure Resource Group    
-In Advanced tab:   
-If you need to modify the name of infrastructure resource group of AKS, click on Edit and change the name.      
+**5. Edit the name of Infrastructure Resource Group** 
+- In Advanced tab:   
+   - If you need to modify the name of infrastructure resource group of AKS, click on Edit and change the name.      
 
 7. Click Review + Create, validate the configuration, and then click Create to deploy the cluster.
 
