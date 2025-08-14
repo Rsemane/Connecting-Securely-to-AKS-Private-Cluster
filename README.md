@@ -28,4 +28,4 @@ You have an AKS private cluster with a public FQDN, but its API server is only a
 
 The diagram below presents the various access methods and infrastructure components involved in deploying and connecting to an Azure Kubernetes Service (AKS) private cluster.
 
-`(images/"Connecting to an AKS Private Cluster.png")`
+![Architecture Diagram](images/Connecting%20to%20an%20AKS%20Private%20Cluster.png)
