@@ -18,7 +18,31 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 
 ## ☸️ AKS Private Cluster Deployment
 
-- Create a Private AKS cluster with private API server endpoint.
+- To deploy the AKS private cluster with a private API server endpoint, follow these steps in the Azure Portal:
+1. Navigate to AKS Service
+[x]Go to the Azure Portal and search for Kubernetes services, then click Create.
+
+2. Configure Basics
+Fill in the required fields such as:
+
+[x]Subscription
+[x]Resource Group
+[x]Cluster name
+[x]Region
+
+3. Click "Next" Until You Reach the Networking Tab
+Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Networking.
+
+4. Enable Private Cluster
+In the Networking tab:
+
+[x]Set API server access to Private cluster.
+[x]Choose the appropriate Virtual Network (Spoke VNet in this case).
+[x]Optionally configure Private DNS Zone or leave it to be auto-created.
+[x]Review + Create
+
+5. Click Review + Create, validate the configuration, and then click Create to deploy the cluster.
+
 
 ## 🔗  Link Hub VNet (VNet where Cloud Shell will be deployed) to Private DNS Zone. 
 - Establish a link between Private DNS Zone and VNet where Cloud Shell is deployed to resolve the public FQDN to Private IP.  
