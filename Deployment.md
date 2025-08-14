@@ -19,16 +19,16 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 ## ☸️ AKS Private Cluster Deployment
 
 - To deploy the AKS private cluster with a private API server endpoint, follow these steps in the Azure Portal:
-1. Navigate to AKS Service
--[x] Go to the Azure Portal and search for Kubernetes services, then click Create.
+1. Navigate to AKS Service   
+- [x] Go to the Azure Portal and search for Kubernetes services, then click Create.
 
 3. Configure Basics
 Fill in the required fields such as:
 
--[x] Subscription
--[x] Resource Group
--[x] Cluster name
--[x] Region
+- [x] Subscription
+- [x] Resource Group
+- [x] Cluster name
+- [x] Region
 
 3. Click "Next" Until You Reach the Networking Tab
 Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Networking.
