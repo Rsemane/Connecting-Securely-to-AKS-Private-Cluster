@@ -1,4 +1,4 @@
-🔐 Securely Connecting to an AKS Private Cluster
+# 🔐 Securely Connecting to an AKS Private Cluster
 ## Overview
 This guide outlines various methods for securely accessing an Azure Kubernetes Service (AKS) private cluster, particularly when the cluster is configured with a private endpoint and resides within a virtual network (VNet).
 
@@ -7,10 +7,11 @@ This guide outlines various methods for securely accessing an Azure Kubernetes S
 - **Cloud Shell VNet Integration**: Enables Cloud Shell to run inside a user-defined VNet for secure resource access.
 - **Azure Container Instance (ACI)**: Hosts the Cloud Shell session when deployed into a VNet.
 
-📘 Scenario: Accessing a Private AKS Cluster via Private Connectivity
+## 📘  Scenario: Accessing a Private AKS Cluster via Private Connectivity
+
 You have an AKS private cluster with a public FQDN, but its API server is only accessible through a private endpoint (private IP) bound to a network interface (NIC) within your VNet. To interact with this cluster, you must establish connectivity to the VNet hosting the endpoint.
 
-✅ Access Options
+## ✅ Access Options
 
 1. **Jump Server (VM) in VNet or Peered VNet**
    Deploy a virtual machine within the same VNet or a peered VNet. Ensure it is permitted by Network Security Groups (NSGs) to access the AKS endpoint.
