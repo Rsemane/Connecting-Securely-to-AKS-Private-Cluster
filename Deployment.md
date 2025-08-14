@@ -97,49 +97,49 @@ To configure Azure Cloud Shell with Virtual Network integration, the following c
 👉 **Important:
 Please make sure to check the section "Deploy Azure Relay Namespace" for additional deployment steps and configuration details.**
 
-### <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
-**1. Go to Azure Portal** 
-Navigate to https://portal.azure.com and sign in.
+    ### <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
+     **1. Go to Azure Portal** 
+     Navigate to https://portal.azure.com and sign in.
+     
+     **2. Search for "Storage Accounts"**
+     In the top search bar, type Storage Accounts and select it.  
+     
+     **3. Click "Create"**
+     Click the + Create button to start the wizard.  
+     
+     **4. Fill in the Basics:**
+     
+     - Subscription: Select your active subscription.
+     - Resource Group: A resource group where you will have Storage account and Azure Relay namespace.
+     - Storage Account Name: Enter a globally unique name (e.g., hubstorageaccount).
+     - Region: Select North Europe.
+     - Performance: Standard.
+     - Redundancy: Choose Locally-redundant storage (LRS). (Unless you need high availability but for the sake of this demo I used LRS) 
+     - Click "Review + Create", then Create
+     - Azure will validate the configuration and deploy the storage account.
+     
+     ![Create Storage accout](images/Create-Storage-Account-1.png)
 
-**2. Search for "Storage Accounts"**
-In the top search bar, type Storage Accounts and select it.  
+     ####  <img width="50" height="50" alt="image" src="https://i.imgur.com/FHhdfqG.png" /> Create a File Share Inside the Storage Account
+     **1. Navigate to the Storage Account**
+     Once deployed, go to the newly created storage account.
+     
+     **2. Select "File shares" from the left menu**  
+     Under Data storage, click File shares.
+     
+     **3. Click "+ File share"**  
 
-**3. Click "Create"**
-Click the + Create button to start the wizard.  
-
-**4. Fill in the Basics:**
-
-- Subscription: Select your active subscription.
-- Resource Group: A resource group where you will have Storage account and Azure Relay namespace.
-- Storage Account Name: Enter a globally unique name (e.g., hubstorageaccount).
-- Region: Select North Europe.
-- Performance: Standard.
-- Redundancy: Choose Locally-redundant storage (LRS). (Unless you need high availability but for the sake of this demo I used LRS) 
-- Click "Review + Create", then Create
-- Azure will validate the configuration and deploy the storage account.
-
-![Create Storage accout](images/Create-Storage-Account-1.png)
-
-####  <img width="50" height="50" alt="image" src="https://i.imgur.com/FHhdfqG.png" /> Create a File Share Inside the Storage Account
-**1. Navigate to the Storage Account**
-Once deployed, go to the newly created storage account.
-
-**2. Select "File shares" from the left menu**  
-Under Data storage, click File shares.
-
-**3. Click "+ File share"**  
-
-![Create Storage accout](images/Create-Storage-Account-2.png)
-
-Provide:
-- Name: e.g., fs-azurecloudshell
-- Quota: Optional (e.g., 5 GB) (You have to do it via Edit on File Share after creation)
-- Click Create
-
-![Create Storage accout](images/Create-Storage-Account-3.png)
-
-**4. Creation in Progress**
-Your file share will be created and ready for use.
+     ![Create Storage accout](images/Create-Storage-Account-2.png)
+     
+     Provide:
+     - Name: e.g., fs-azurecloudshell
+     - Quota: Optional (e.g., 5 GB) (You have to do it via Edit on File Share after creation)
+     - Click Create
+     
+     ![Create Storage accout](images/Create-Storage-Account-3.png)
+     
+     **4. Creation in Progress**
+     Your file share will be created and ready for use.
 
 
 ### Register resource providers [Check links](Resources.md)
