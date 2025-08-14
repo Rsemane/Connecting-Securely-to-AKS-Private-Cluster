@@ -33,7 +33,7 @@ Fill in the required fields such as:
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%201.png)
 
 
-3. Click "Next" Until You Reach the Networking Tab 
+3. Click "Next" Until You Reach the Networking Tab    
 Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Networking.   
 
 ![Create Private AKS Cluster](images/Create%20Kubernetes%20cluster%20-%202.png)
