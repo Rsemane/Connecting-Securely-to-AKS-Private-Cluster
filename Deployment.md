@@ -208,6 +208,14 @@ The Azure Relay namespace, along with all required network components and author
 ⚠️ Important:
 If the Storage Account and VNet are not in the same resource group, Cloud Shell will not be able to associate the VNet with the Storage Account, and the configuration will fail.
 
+
+![DeployCloudShell ARM](images/Deploy-CloudShell-Privatenetwork.png)
+
+
+![DeployCloudShell ARM](images/Deploy-CloudShell-Privatenetwork3.png)
+
+
+
 ### Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
 ### Use Cloud Shell to securely connect to the AKS private endpoint
 
