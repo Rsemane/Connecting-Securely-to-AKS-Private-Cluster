@@ -91,7 +91,7 @@ To configure Azure Cloud Shell with Virtual Network integration, the following c
 - **File Share (Storage Account)**: Used to persist Cloud Shell session data across restarts. 
 
 
-![Required config resources](images/Configure-CloudShell-Private-6.png)
+![Required config resources](images/required-resources-for-cloudshell-integration.png)
 
 **PS: The above resources are automatically deployed via the ARM Template Azure Cloud Shell,except the File Share that should be deployed manually.**
 👉 **Important:
