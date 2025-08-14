@@ -156,14 +156,16 @@ To see all resource providers and the registration status for your subscription:
 1. Sign in to the Azure portal.
 2. On the Azure portal menu, search for Subscriptions. Select it from the available options.
 3. Select the subscription that you want to view.
-4. On the left menu, under Settings, select Resource providers.
-5. In the search box, enter cloudshell to search for the resource provider.
-6. Select the Microsoft.CloudShell resource provider from the provider list.
-7. Select Register to change the status from unregistered to registered.
-8. Repeat the previous steps for the Microsoft.ContainerInstance and Microsoft.Relay resource providers.
+4. On the left menu, under Settings, select **Resource providers**.
+5. In the search box, enter **cloudshell** to search for the resource provider.
+6. Select the **Microsoft.CloudShell** resource provider from the provider list.
+7. Select **Register** to change the status from unregistered to registered.
+8. Repeat the previous steps for the **Microsoft.ContainerInstance** and **Microsoft.Relay** resource providers.
 
-![Register Reource provider](images/resource-provider.png)
+![Register Reource provider](images/Registered-providers-1.png)
 
+
+![Register Reource provider](images/Registered-providers-2.png)
 
 ### Get The Azure container instance ID
 
