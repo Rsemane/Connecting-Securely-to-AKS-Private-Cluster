@@ -93,7 +93,7 @@ To configure Azure Cloud Shell with Virtual Network integration, the following c
 👉 **Important:
 Please make sure to check the section "Deploy Azure Relay" for additional deployment steps and configuration details.**
 
-### <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
+### <img width="30" height="30" alt="image" src="https://github.com/user-attachments/assets/732f855a-93de-4cfe-8167-2c4d42430b9a" /> Create a Storage Account in Azure Portal
 **1. Go to Azure Portal** 
 Navigate to https://portal.azure.com and sign in.
 
