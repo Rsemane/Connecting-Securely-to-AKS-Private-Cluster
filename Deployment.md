@@ -43,7 +43,7 @@ Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Netw
 In the Networking tab:
 
 - [x] Check Enable private cluster  
-- [x] You can choose to Bring your own Azure Virtual Network if created before. If not you can keep it unchecked, a new Azure Virtual Network will be created.   
+- [x] If you have already created an Azure Virtual Network, you may choose to use it by selecting the **Bring your own VNet** option. Otherwise, leave it unchecked to allow Azure to automatically create a new Virtual Network for the cluster. 
 - [x] Optionally configure DNS name prefix or leave it to be auto-created.   
 - [x] Review + Create   
 
