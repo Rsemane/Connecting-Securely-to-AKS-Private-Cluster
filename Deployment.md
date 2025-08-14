@@ -25,7 +25,7 @@ For the purpose of this demonstration, access to the AKS private cluster will be
 3. Configure Basics
 Fill in the required fields such as:
 
-- [] Subscription
+- [ ] Subscription
 - [] Resource Group
 - [] Cluster name
 - [] Region
