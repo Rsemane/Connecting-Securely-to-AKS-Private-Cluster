@@ -44,7 +44,7 @@ The diagram below presents the various access methods and infrastructure compone
 
 This project demonstrates how to deploy Azure Cloud Shell with VNet integration to securely connect to a private AKS (Azure Kubernetes Service) cluster.
 
-**- this is a red colored line Cloud Shell with VNet integration requires a network profile, file share, and Azure Relay namespace. See deployment.md for detailed setup instructions.**
+<span style="color:red"> Cloud Shell with VNet integration requires a network profile, file share, and Azure Relay namespace. See deployment.md for detailed setup instructions.</span>
 
 
 ### 🔧 Key Objectives
