@@ -62,7 +62,7 @@ The following resources are provisioned as part of the AKS cluster deployment.
 ![Infrastructure Resource Group](images/Private-EndpointAKS.png)
 
 
-## 🔗  Link Hub VNet (VNet where Cloud Shell ACI will be deployed) to Private DNS Zone. 
+## 🔗  Link Hub VNet (VNet where Cloud Shell ACI will be deployed) to Private DNS Zone   
 **1. Locate the AKS Private DNS Zone**
 - Go to Private DNS Zones in Azure Portal.
 - The zone name will look like: privatelink.<region>.azmk8s.io (e.g., privatelink.northeurope.azmk8s.io)
