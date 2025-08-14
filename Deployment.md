@@ -53,7 +53,7 @@ Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Netw
 - In Advanced tab:   
    - If you need to modify the name of infrastructure resource group of AKS, click on Edit and change the name.      
 
-7. Click Review + Create, validate the configuration, and then click Create to deploy the cluster.
+**6. Click Review + Create, validate the configuration, and then click Create to deploy the cluster.**   
 
 ## What looks like Infrastructure Resource Group Resources
 
