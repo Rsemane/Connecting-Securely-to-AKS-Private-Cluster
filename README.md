@@ -44,12 +44,10 @@ This project demonstrates how to deploy Azure Cloud Shell with VNet integration 
 
 ## 🧰 [Resources](Resources.md)
 
-- Microsoft Cloud Shell in Virtual Network Overview : https://learn.microsoft.com/en-us/azure/cloud-shell/vnet/overview
+- Microsoft Cloud Shell in Virtual Network Overview 
+- Microsoft Cloud Shell Deployment ARM Template
 
-<img width="2857" height="1511" alt="image" src="https://github.com/user-attachments/assets/17825bfb-e3f5-4390-9d4b-662864fcd926" />
-
-- Microsoft Cloud Shell Deployment ARM Template : https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/cloud-shell-vnet/
-
+  
 ## ✅ Conclusion 
 
 This deployment showcases a secure and flexible method for accessing a private AKS cluster using Azure Cloud Shell with VNet integration. By placing Cloud Shell within a virtual network, you eliminate public exposure of the Kubernetes API and ensure that all management traffic flows through trusted, internal paths.
