@@ -186,7 +186,7 @@ You use this ID in the quickstart template for the virtual network.
 ### Deploy Azure Relay Namespace
 
 The Azure Relay namespace, along with all required network components and authorization settings, will be deployed automatically using an ARM Template.  
-To deploy these resources into your Azure subscription, please use the link below:  
+To deploy these resources into your Azure subscription, Navigate to  
 
 [🔗 Deploy via Azure Cloud Shell – VNet Quickstart Template](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/cloud-shell-vnet/)
 
