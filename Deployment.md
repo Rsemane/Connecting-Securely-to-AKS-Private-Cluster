@@ -1,6 +1,7 @@
 # 🚀 Deployment Flow Overview
 This guide outlines the steps to deploy and securely connect to an Azure Kubernetes Service (AKS) private cluster using Cloud Shell with VNet integration, following a hub-and-spoke network topology.
 
+
  ## Access Options Flow 
 For the purpose of this demonstration, access to the AKS private cluster will be established using Access Option 3.   
 
@@ -62,8 +63,20 @@ The following resources are provisioned as part of the AKS cluster deployment.
 ![Infrastructure Resource Group](images/Private-EndpointAKS.png)
 
 
-## 🔗  Link Hub VNet (VNet where Cloud Shell will be deployed) to Private DNS Zone. 
-- Establish a link between Private DNS Zone and VNet where Cloud Shell is deployed to resolve the public FQDN to Private IP.  
+## 🔗  Link Hub VNet (VNet where Cloud Shell ACI will be deployed) to Private DNS Zone. 
+1. Locate the AKS Private DNS Zone
+Go to Private DNS Zones in Azure Portal.
+The zone name will look like:
+privatelink.<region>.azmk8s.io
+(e.g., privatelink.northeurope.azmk8s.io)
+2. Link the Hub VNet to the Private DNS Zone
+- In the Private DNS Zone:
+  - Go to Settings → Virtual Network Links
+  - Click + Add
+Enter a Link Name (e.g., hub-vnet-link)
+Select the Hub VNet from the dropdown
+Choose whether to enable Auto-registration (usually disabled for AKS)
+Click OK
 
 ## <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e58663d2-1b30-4081-af94-cd28dec08937" />  Azure Relay Deployment & configure Cloud Shell
 - Deploy Azure Relay 
