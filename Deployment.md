@@ -120,7 +120,7 @@ Please make sure to check the section "Deploy Azure Relay Namespace" for additio
      
    ![Create Storage accout](images/Create-Storage-Account-1.png)
 
-   ####  <img width="50" height="50" alt="image" src="https://i.imgur.com/FHhdfqG.png" /> Create a File Share Inside the Storage Account
+   ####  <img width="30" height="30" alt="image" src="https://i.imgur.com/FHhdfqG.png" /> Create a File Share Inside the Storage Account
    **1. Navigate to the Storage Account**
    Once deployed, go to the newly created storage account.
      
