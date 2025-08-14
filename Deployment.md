@@ -42,7 +42,7 @@ Proceed through the tabs (Node Pools, Authentication, etc.) until you reach Netw
 4. Enable Private Access
 In the Networking tab:
 
-- [x] Check Enable private cluster  
+- [x] Check Enable private cluster (Note: The option Public access - Set authorized IP ranges will be greyed out) 
 - [x] If you have already created an Azure Virtual Network, you may choose to use it by selecting the **Bring your own VNet** option. Otherwise, leave it unchecked to allow Azure to automatically create a new Virtual Network for the cluster. 
 - [x] Optionally configure DNS name prefix or leave it to be auto-created.   
 - [x] Review + Create   
@@ -54,6 +54,12 @@ In Advanced tab:
 If you need to modify the name of infrastructure resource group of AKS, click on Edit and change the name.      
 
 7. Click Review + Create, validate the configuration, and then click Create to deploy the cluster.
+
+## What looks like Infrastructure Resource Group Resources
+
+The following resources are provisioned as part of the AKS cluster deployment. 
+
+![Infrastructure Resource Group](images/Private-EndpointAKS.png)
 
 
 ## 🔗  Link Hub VNet (VNet where Cloud Shell will be deployed) to Private DNS Zone. 
