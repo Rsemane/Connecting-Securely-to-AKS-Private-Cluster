@@ -212,7 +212,7 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 ![DeployCloudShell ARM](images/Deploy-CloudShell-Privatenetwork.png)
 
 
-![DeployCloudShell ARM](images/Deploy-CloudShell-Privatenetwork3.png)
+![DeployCloudShell ARM](images/Deploy-CloudShell-Privatenetwork-3.png)
 
 
 
