@@ -17,7 +17,7 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
  **2. Azure Relay Is Used by Microsoft to Reach the Container**
 	- Azure Relay is not accessed by your resources.  
 	- Instead, Microsoft’s infrastructure uses Azure Relay to connect your browser session to the container.  
-	- This is done via a hybrid connection, which allows two endpoints that aren’t directly reachable to communicate securely. 
+	- This is done via a hybrid connection, which allows two endpoints that aren’t directly reachable to communicate securely.   
  **3. Private Endpoint for Azure Relay Is Deployed in Your VNet**
 	- This gives Azure Relay a private IP inside your VNet.  
 	- Azure uses this private IP to reach the Cloud Shell container from its own infrastructure.  
