@@ -274,7 +274,7 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
   
 - The assigned IP address will be allocated from the Container Subnet, which was configured during the deployment of the Azure Cloud Shell VNet. 
 
-![Configure CloudShell](images/ifconfig-cloudshell-after-configuration.png)
+![Configure CloudShell ifconfig](images/ifconfig-cloudShell-after-configuration.png)
 
 
 **⚠️Important Note:  
