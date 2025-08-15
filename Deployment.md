@@ -256,7 +256,7 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 - Check the box **"Use an existing private network"**.
 - Click **Apply** to proceed.
 
-** ⚠️ Note: In this step you can choose to mount storage account or not to use storage account. Cloud Shell in a private virtual network using Azure Relay requires a storage account - File Share**. 
+**⚠️ Note: In this step you can choose to mount storage account or not to use storage account. Cloud Shell in a private virtual network using Azure Relay requires a storage account - File Share**. 
 
 ![Configure CloudShell](images/Configure-CloudShell-Private-4.png)
 
