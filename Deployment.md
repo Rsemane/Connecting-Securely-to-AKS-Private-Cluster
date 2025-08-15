@@ -273,11 +273,8 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 ![Configure CloudShell](images/Configure-CloudShell-Private-12.png)
 
 
-**Important Note on ACI IP Visibility
-When verifying the IP address of the Azure Container Instance (ACI), you’ll notice that it is assigned from the Container Subnet configured during the deployment of the Azure Cloud Shell VNet.
-
-However, please be aware that this IP address will not appear under Connected Devices in the Azure Portal's Virtual Network view. This behavior is expected, as the ACI networking is fully managed by Azure and does not expose the container's IP in the standard VNet device list.
-
+**⚠️Important Note:  
+On ACI IP Visibility When verifying the IP address of the Azure Container Instance (ACI), you’ll notice that it is assigned from the Container Subnet configured during the deployment of the Azure Cloud Shell VNet. However, please be aware that this IP address will not appear under Connected Devices in the Azure Portal's Virtual Network view. This behavior is expected, as the ACI networking is fully managed by Azure and does not expose the container's IP in the standard VNet device list.  
 💡 Community Request:
 If anyone has found a method to retrieve or surface this information within their subscription, please feel free to reach out to me.**
 
