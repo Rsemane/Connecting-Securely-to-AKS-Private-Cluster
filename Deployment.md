@@ -217,6 +217,71 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 
 
 ### Configure Cloud Shell within the Hub VNet (or VNet of your choice that is peered to AKS VNet)
+
+**1. Open Azure Cloud Shell**
+
+- Go to the Azure Portal and click the Cloud Shell icon in the top navigation bar.
+  
+**2. Access the Settings Menu**  
+
+- In the Cloud Shell window, click the gear icon (⚙️) located in the top-left corner of the toolbar.
+
+**3. Select "Reset User Settings"**  
+
+- From the dropdown menu, choose "Reset User Settings". This will reset your Cloud Shell environment.
+  
+![Configure CloudShell](images/Configure-CloudShell-Private-1.png)
+  
+**4. Confirm the Reset**   
+- You’ll be prompted to confirm the reset. Accept to proceed.
+
+![Configure CloudShell](images/Configure-CloudShell-Private-2.png)
+  
+**5. Choose Your Shell Environment** 
+
+- After resetting, select either Bash or PowerShell as your preferred shell.
+
+![Configure CloudShell](images/Configure-CloudShell-Private-3.png)
+
+  
+**6. Reconfigure Storage (if needed)**  
+
+- You may need to remount your Azure File Share or create a new one.
+
+**⚠️Note: Resetting Cloud Shell will erase any files not stored in your mounted Azure File Share. Make sure important files are backed up.**
+
+
+**7. Select an existing private virtual network**
+
+- Check the box **"Use an existing private network"**.
+- Click **Apply** to proceed.
+
+** ⚠️ Note: In this step you can choose to mount storage account or not to use storage account. Cloud Shell in a private virtual network using Azure Relay requires a storage account - File Share**. 
+
+![Configure CloudShell](images/Configure-CloudShell-Private-4.png)
+
+**8. Complete the Required Configuration Fields**
+
+- Fill in all necessary fields to finalize the setup.
+
+![Configure CloudShell](images/Configure-CloudShell-Private-11.png)
+
+**9. Requesting a Cloud Shell in private virtual network**
+
+- In the image below, a new Azure Container Instance (ACI) is being provisioned within your Virtual Network (VNet). The assigned IP address will be allocated from the Container Subnet, which was configured during the deployment of the Azure Cloud Shell VNet. 
+
+![Configure CloudShell](images/Configure-CloudShell-Private-12.png)
+
+
+**Important Note on ACI IP Visibility
+When verifying the IP address of the Azure Container Instance (ACI), you’ll notice that it is assigned from the Container Subnet configured during the deployment of the Azure Cloud Shell VNet.
+
+However, please be aware that this IP address will not appear under Connected Devices in the Azure Portal's Virtual Network view. This behavior is expected, as the ACI networking is fully managed by Azure and does not expose the container's IP in the standard VNet device list.
+
+💡 Community Request:
+If anyone has found a method to retrieve or surface this information within their subscription, please feel free to reach out to me.**
+
+
 ### Use Cloud Shell to securely connect to the AKS private endpoint
 
   
