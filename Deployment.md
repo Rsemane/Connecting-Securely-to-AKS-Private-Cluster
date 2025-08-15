@@ -233,7 +233,7 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 ![Configure CloudShell](images/Configure-CloudShell-Private-1.png)
   
 **4. Confirm the Reset**   
-- You’ll be prompted to confirm the reset. Accept to proceed.
+- You’ll be prompted to confirm the reset. Reset to proceed.
 
 ![Configure CloudShell](images/Configure-CloudShell-Private-2.png)
   
