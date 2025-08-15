@@ -284,10 +284,31 @@ On ACI IP Visibility When verifying the IP address of the Azure Container Instan
 If anyone has found a method to retrieve or surface this information within their subscription, please feel free to reach out to me.**
 
 
-### Use Cloud Shell to securely connect to the AKS private endpoint
-
+### Use Cloud Shell to securely connect to the AKS private endpoint  
+**1. Go to the AKS Resource**
+- Open the Azure Portal.
+- Navigate to your AKS cluster resource.
   
-## ✅ Connection Verification
-Confirm access paths:
-From Portal → Cloud Shell → Private Endpoint AKS
+**2. Click on the “Connect” Button**
+- At the top of the AKS overview page, click “Connect”.
+- This opens a panel with instructions and a command to run in Azure Cloud Shell.
+
+**3. Launch Azure Cloud Shell**
+
+- If not already open, click the Cloud Shell icon in the top navigation bar.
+- Choose Bash or PowerShell (typically Bash is used for Kubernetes).
+  
+**4. Run the Provided Command** 
+
+The command usually looks like:
+```bash
+az aks get-credentials --resource-group <your-resource-group> --name <your-aks-cluster-name>
+```
+
+**5. Connection Verification**  
+- Successfully queried all pods across namespaces using the command: kubectl get pods -A.
+
+![Connect to AKS](images/connect-to-private-aks-cluster-success.png)
+
+
 
