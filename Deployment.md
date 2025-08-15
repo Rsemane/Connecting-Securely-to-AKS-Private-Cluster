@@ -268,9 +268,13 @@ If the Storage Account and VNet are not in the same resource group, Cloud Shell 
 
 **9. Requesting a Cloud Shell in private virtual network**
 
-- In the image below, a new Azure Container Instance (ACI) is being provisioned within your Virtual Network (VNet). The assigned IP address will be allocated from the Container Subnet, which was configured during the deployment of the Azure Cloud Shell VNet. 
-
+- In the image below, a new Azure Container Instance (ACI) is being provisioned within your Virtual Network (VNet).
+  
 ![Configure CloudShell](images/Configure-CloudShell-Private-12.png)
+  
+- The assigned IP address will be allocated from the Container Subnet, which was configured during the deployment of the Azure Cloud Shell VNet. 
+
+![Configure CloudShell](images/ifconfig-cloudshell-after-configuration.png)
 
 
 **⚠️Important Note:  
