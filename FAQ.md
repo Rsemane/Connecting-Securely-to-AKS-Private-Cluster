@@ -10,7 +10,7 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
 	- The container is short-lived and isolated.
 
 
-###🔌 Azure Relay Acts as a Bi-directional Proxy—but Only for the Browser ↔ Container Path  
+### 🔌Azure Relay Acts as a Bi-directional Proxy—but Only for the Browser ↔ Container Path  
 **1. Cloud Shell Container Is Deployed Inside Your VNet**
 	- It gets a private IP from the container subnet.  
 	- It can access private resources like AKS, VMs, etc.  
