@@ -29,6 +29,8 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
 The AKS cluster is reachable via private DNS or a private link.   
 
 
+### Why we connect to Endpoint API via 443 and not 6443    
+AKS utilizes a load balancer configured to allow inbound traffic on port 443.
 
 ### 🔌Azure Relay Acts as a Bi-directional Proxy—but Only for the Browser ↔ Container Path  
 **1. Cloud Shell Container Is Deployed Inside Your VNet**     
