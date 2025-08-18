@@ -39,8 +39,8 @@ Cloud Shell Container (Private IP in container subnet)
 AKS Private Cluster (Private IP in AKS subnet)    
 
 
-#### 🔐 Key Insight
-	Azure Relay’s private endpoint is used by Microsoft’s infrastructure, not by your resources. It allows Azure to inject traffic into your VNet to reach the Cloud Shell container.
-    This design cleverly bypasses the limitation of private endpoints being inbound-only—because the inbound traffic is initiated by Azure Relay, not by your VNet.
+#### 🔐 Key Insight  
+Azure Relay’s private endpoint is used by Microsoft’s infrastructure, not by your resources. It allows Azure to inject traffic into your VNet to reach the Cloud Shell container.
+This design cleverly bypasses the limitation of private endpoints being inbound-only—because the inbound traffic is initiated by Azure Relay, not by your VNet.
 	
 
