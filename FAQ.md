@@ -54,25 +54,12 @@ Azure Portal
     	    ↓     
 Azure Relay (Private Endpoint in VNet, with private IP)    
     	    ↓  
-Cloud Shell Container (Private IP in container subnet)    
+Cloud Shell Container (Private IP in container subnet)
+
     	    ↓  
 AKS Private Cluster (Private IP in AKS subnet)    
 
 
-
-User Browser (Internet)  
-        │  
-        ▼  
-Azure Portal  
-        │  
-        ▼  
-Azure Relay (Private Endpoint in VNet, with private IP)  
-        │  
-        ▼  
-Cloud Shell Container (Private IP in container subnet)  
-      	  │  
-        	▼  
-AKS Private Cluster (Private IP in AKS subnet)
 
 
 #### 🔐 Key Insight  
