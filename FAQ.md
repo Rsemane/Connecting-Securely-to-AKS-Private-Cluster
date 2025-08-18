@@ -24,3 +24,17 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
 	- This gives Azure Relay a private IP inside your VNet.      
 	- Azure uses this private IP to reach the Cloud Shell container from its own infrastructure.     
 	- The traffic flow is initiated by Azure Relay (on behalf of your browser), not by your resources.     
+
+
+### 🔁 Summary of Flow of Azure Relay
+
+User Browser (Internet)
+        ↓
+Azure Portal
+        ↓
+Azure Relay (Private Endpoint in VNet, with private IP)
+        ↓
+Cloud Shell Container (Private IP in container subnet)
+        ↓
+AKS Private Cluster (Private IP in AKS subnet)
+
