@@ -70,8 +70,8 @@ Azure Relay (Private Endpoint in VNet, with private IP)
         │  
         ▼  
 Cloud Shell Container (Private IP in container subnet)  
-        │  
-        ▼  
+      	  │  
+        	▼  
 AKS Private Cluster (Private IP in AKS subnet)
 
 
