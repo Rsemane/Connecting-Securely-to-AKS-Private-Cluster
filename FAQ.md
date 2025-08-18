@@ -1,7 +1,7 @@
 ### Why You Can’t See the NIC or Private IP of the Cloud Shell Container  
 Even though the Cloud Shell container runs inside your VNet, its network interface is not exposed to you. Here's why:  
  **1. Cloud Shell Is a Managed Service**   
- 	- The container is provisioned and controlled entirely by Microsoft.    
+    - The container is provisioned and controlled entirely by Microsoft.    
 	- You don’t own the container group or its NIC—so it doesn’t show up in your subscription.  
  - 
  **2. No Resource Visibility**  
