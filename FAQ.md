@@ -13,20 +13,20 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
 
 
 ### 🌐 Network Flow: Cloud Shell in VNet → AKS Private Cluster via Azure Relay
-**1. Cloud Shell Container Gets an IP from the Container Subnet**
-	- When Cloud Shell is deployed in a VNet, it runs inside an Azure Container Instance (ACI).
-	- This ACI is assigned a private IP address from the container subnet you specify.
-	- This subnet must be part of the same VNet—or peered to the VNet where your AKS cluster resides.
+**1. Cloud Shell Container Gets an IP from the Container Subnet**   
+	- When Cloud Shell is deployed in a VNet, it runs inside an Azure Container Instance (ACI).   
+	- This ACI is assigned a private IP address from the container subnet you specify.   
+	- This subnet must be part of the same VNet—or peered to the VNet where your AKS cluster resides.   
  
-**2. Azure Relay Facilitates Secure Connectivity**
-	- Azure Relay acts as a secure tunnel between your browser session and the Cloud Shell container.
-	- It does not route traffic to AKS itself—it simply allows your browser to interact with the container running inside the VNet.
+**2. Azure Relay Facilitates Secure Connectivity**  
+	- Azure Relay acts as a secure tunnel between your browser session and the Cloud Shell container.   
+	- It does not route traffic to AKS itself—it simply allows your browser to interact with the container running inside the VNet.  
  
-**3. Cloud Shell Container Connects Directly to AKS**
-	- Once inside the VNet, the Cloud Shell container can directly access the AKS API server via its private endpoint (usually on port 443 or 6443).
-	- This works because:
-		- The container has a private IP in the same network space.
-The AKS cluster is reachable via private DNS or a private link.
+**3. Cloud Shell Container Connects Directly to AKS**  
+	- Once inside the VNet, the Cloud Shell container can directly access the AKS API server via its private endpoint (usually on port 443 or 6443).   
+	- This works because:  
+		- The container has a private IP in the same network space.  
+The AKS cluster is reachable via private DNS or a private link.   
 
 
 
