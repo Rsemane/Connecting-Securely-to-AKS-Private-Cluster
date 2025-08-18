@@ -66,5 +66,5 @@ Beyond AKS, this setup also enables secure access to other private Azure resourc
 This approach aligns with best practices for enterprise-grade security, operational efficiency, and network segmentation in Azure.
 
 
-## 🧠 [FAQ] Reflection (FAQ.md)
+## 🧠 [FAQ](FAQ.md) Reflection 
 As I worked through this architecture, several questions naturally came to mind, things I wanted to understand better or clarify for future reference. I’ve documented the answers I found in the FAQ section below. These are based on my own exploration and experience, but I’d love to hear your thoughts too. Do these answers make sense to you? Are there other perspectives, questions, or ideas you'd like to add? Feel free to contribute or open a discussion/collaboration helps us all learn more effectively.
