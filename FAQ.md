@@ -28,13 +28,13 @@ Even though the Cloud Shell container runs inside your VNet, its network interfa
 
 ### 🔁 Summary of Flow of Azure Relay
 
-User Browser (Internet)  
+User Browser (Internet)    
          	↓    
-Azure Portal  
+Azure Portal    
     	    ↓     
-Azure Relay (Private Endpoint in VNet, with private IP)  
+Azure Relay (Private Endpoint in VNet, with private IP)    
     	    ↓  
-Cloud Shell Container (Private IP in container subnet)  
+Cloud Shell Container (Private IP in container subnet)    
     	    ↓  
-AKS Private Cluster (Private IP in AKS subnet)  
+AKS Private Cluster (Private IP in AKS subnet)    
 
